@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: devfile-sample-kslm
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:6fNZr-devfile-sample-kslm
+      - image: quay.io/redhat-appstudio/user-workload@sha256:2ac4108a621aca343ef0c2e57a5fc344a2797afda8735492e333603349b23d2c
         name: my-nodejs
         ports:
         - containerPort: 3001
