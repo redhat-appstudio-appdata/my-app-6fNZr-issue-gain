@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-kslm
+  namespace: pshivpuj-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:2ac4108a621aca343ef0c2e57a5fc344a2797afda8735492e333603349b23d2c
+        name: my-nodejs
+        resources: {}
+status: {}
